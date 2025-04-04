@@ -5,7 +5,7 @@ on: # This action will trigger when an issue is reopened or opened.
       - closed
   pull_request:
     types:
-      -opened
+      - opened
       
 jobs: # The jobs that run in this workflow
   label_issues: # the first job is named as label_issues
