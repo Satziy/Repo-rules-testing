@@ -32,7 +32,7 @@ jobs: # The jobs that run in this workflow
           body: | # The body of the comment is a message thanking the user for opening the issue.
            The issue is now resolved. Thank you for your patience!
 
-        - name: Comment on first pull request
+      - name: Comment on first pull request
         if: github.event_name == 'pull_request' && github.event.action == 'opened'
         uses: peter-evans/create-or-update-comment@v1
         with:
